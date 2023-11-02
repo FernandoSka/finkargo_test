@@ -1,0 +1,469 @@
+{
+	"info": {
+		"_postman_id": "339a854c-e17f-4867-ad95-991f32f74303",
+		"name": "Finkargo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "479970"
+	},
+	"item": [
+		{
+			"name": "Entidad",
+			"item": [
+				{
+					"name": "list_entidad",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local_env}}/nps/entidad/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"entidad",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_entidad",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Test entidad\",\r\n    \"tipo\": \"Empresa\",\r\n    \"pais\": \"Mexico\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/entidad/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"entidad",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_entidad",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Test entidad\",\r\n    \"tipo\": \"Empresa\",\r\n    \"pais\": \"Mexico\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/entidad/9/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"entidad",
+								"9",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_entidad",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/entidad/9/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"entidad",
+								"9",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colaborador",
+			"item": [
+				{
+					"name": "list_colaborador",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local_env}}/nps/colaborador/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"colaborador",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_colaborador",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Test colaborador\",\r\n    \"cargo\": \"Empleado\",\r\n    \"user\": 36,\r\n    \"entidad\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/colaborador/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"colaborador",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_colaborador",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Test colaborador\",\r\n    \"cargo\": \"Empleado\",\r\n    \"user\": 36,\r\n    \"entidad\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/colaborador/33/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"colaborador",
+								"33",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_colaborador",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/colaborador/33/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"colaborador",
+								"33",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "seguimiento_nps_menor_a_4",
+			"item": [
+				{
+					"name": "lista_nps_bajo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local_env}}/nps/nps_bajo/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"nps_bajo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contactar_nps_bajo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contactado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_env}}/nps/nps_bajo/1/",
+							"host": [
+								"{{local_env}}"
+							],
+							"path": [
+								"nps",
+								"nps_bajo",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"master@master.com\",\r\n    \"password\": \"123abc456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_env}}/nps/token/",
+					"host": [
+						"{{local_env}}"
+					],
+					"path": [
+						"nps",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test1@test.test\",\r\n    \"name\": \"test user\",\r\n    \"last_name\": \"test last_name\",\r\n    \"password\": \"123abc456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_env}}/nps/create_user/",
+					"host": [
+						"{{local_env}}"
+					],
+					"path": [
+						"nps",
+						"create_user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_encuesta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"test test\",\r\n    \"email\": \"test@test.com\",\r\n    \"calificacion\": 0,\r\n    \"entidad\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/nps/encuesta/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"nps",
+						"encuesta",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reportes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{local_env}}/nps/reports/",
+					"host": [
+						"{{local_env}}"
+					],
+					"path": [
+						"nps",
+						"reports",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
