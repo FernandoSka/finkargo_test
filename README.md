@@ -8,3 +8,5 @@ prueba de evaluacion finkargo
 ### 4.- python manage.py create_data
 ### 5.- python manage.py create_admin_user
 ### 6.- python manage.py runserver
+
+### en postman importar la coleccion finkargo_collection.pdf para tener acceso a los request de manera rapida
