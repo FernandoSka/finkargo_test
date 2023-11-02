@@ -1,5 +1,5 @@
 # finkargo_test
-prueba de evaluacion finkargo
+prueba de evaluacion finkargo.
 ## pasos para instalacion
 
 ### 1.- clonar repositorio
@@ -10,3 +10,5 @@ prueba de evaluacion finkargo
 ### 6.- python manage.py runserver
 
 ### en postman importar la coleccion finkargo_collection.pdf para tener acceso a los request de manera rapida
+
+tiempo de realizacion: aproximadamente 12 hrs.
